@@ -10,10 +10,10 @@ def hello():
 @app.route("/sign-up", methods=["GET", "POST"])
 def sign_up():
 
-    if request.method == "POST":
+    if request.method == "POST": # POST "hides" data in request instead of pass to URL in GET method
 
-        req = request.form
-        # Uncomment line below to test form data is passed correctly
+        # Uncomment the two line below to test form data is passed correctly
+        # req = request.form
         # print("Username is", req.get("username"))
         return redirect(request.url)
 
