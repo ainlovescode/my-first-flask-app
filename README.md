@@ -14,4 +14,4 @@ Files are to be cateogrised into language and/or function i.e. Python files will
 For naming, please obey the following conventions:
 
 - constants are to be fully CAPITALISED
-- functions and variables are to follow camelCase
+- functions and variables are to follow snake_case
