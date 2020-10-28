@@ -1,8 +1,10 @@
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, request, redirect, flash, jsonify
+import sqlite3
 
 app = Flask(__name__)
 
 app.secret_key=b'1jb@9^$'
+app.config["DEBUG"]=True
 
 @app.route('/')
 @app.route('/home')
